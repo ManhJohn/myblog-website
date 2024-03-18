@@ -1,0 +1,296 @@
+* {
+  text-align: center;
+  border: none;
+  padding: 0;
+  margin: none;
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  height: 100px;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 2px 2px 10px black;
+  text-align: center;
+  z-index: 100;
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  position: absolute;
+  margin-left: 2%;
+  margin-top: 2%;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  background: rgba(74, 201, 201, 0.5);
+}
+
+header img {
+  height: 30px;
+}
+
+header h1 {
+  color: white;
+  font-size: 60px;
+  bottom: 10px;
+  position: relative;
+  bottom: 20px;
+}
+
+.search-form {
+  position: absolute;
+  left: 75%;
+  bottom: 40%;
+}
+
+.search-form input {
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+}
+
+.search-form {
+  background: white;
+  width: 220px;
+  border-radius: 10px;
+}
+
+.search-form i {
+  position: absolute;
+  z-index: 50;
+  color: black;
+  top: 5px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 94%;
+  bottom: 40%;
+}
+
+.search-icon i {
+  font-size: 25px;
+}
+
+.search-icon i:hover {
+  color: cyan;
+}
+
+.web-body {
+  margin-top: 100px;
+  background: url("books/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  min-height: 350px;
+}
+
+.home-section {
+  background: url("books/books-hero.jpg");
+  background-position: bottom;
+  background-size: cover;
+  border-bottom: 5px solid gray;
+}
+
+.books-hero {
+  float: right;
+  position: relative;
+  height: 350px;
+  width: 15%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-links {
+ display: flex;
+ flex-direction: column;
+ margin-top: 10%;
+ align-items: center;
+ width: 50%;
+}
+
+.hero-links div {
+  margin-top: 10%;
+  padding: 10px 0;
+  border: 1px solid white;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hero-links a:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+.books-hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.first-section, .third-section {
+  border-bottom: 2px solid white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.first-box, .second-box, .third-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image-10, .image-11, .image-12 {
+  width: 200px;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.image-10 img, .image-11 img, .image-12 img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.book-link {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 2px;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+.book-link a:hover {
+  color: cyan;
+}
+
+.second-section {
+  border-bottom: 2px solid white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  height: 200px;
+  background: rgb(61, 43, 9);
+}
+
+@media (max-width: 1300px) {
+  .search-form {
+    transform: scaleY(0);
+    transform-origin: top;
+    position: relative;
+    left: 70%;
+    transition: all 0.5s;
+  }
+
+  .active {
+    transform: scaleY(1);
+  }
+}
+
+@media (max-width: 750px) {
+  .logo {
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .search-form {
+    left: 60%;
+  }
+
+  .search-icon {
+    left: 84%;
+    bottom: 30%;
+  }
+
+  .books-hero {
+    width: 35%;
+  }
+
+  .first-box, .second-box, .third-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .image-10, .image-11, .image-12 {
+    width: 200px;
+    height: 300px;
+    margin-top: 50px;
+  }
+
+  .image-10 img, .image-11 img, .image-12 img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .book-link {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 2px;
+    border-radius: 10px;
+    margin-left: 15px;
+  }
+
+  footer {
+    height: 200px;
+    background: rgb(61, 43, 9);
+  }
+}
+
+@media (max-width: 600px) {
+  .search-form {
+    left: 40%;
+  }
+}
+
+@media (max-width: 350px) {
+  * {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .logo {
+  display: none;
+  }
+
+  header h1 {
+    font-size: 40px;
+    bottom: 10px;
+  }
+
+  .search-form {
+    left: 10%;
+    top: 0;
+    width: 200px;
+  }
+
+  .search-icon {
+    left: 80%;
+  }
+
+  .books-hero {
+    width: 45%;
+  }
+
+  .image-10, .image-11, .image-12 {
+    width: 100px;
+    height: 150px;
+  }
+
+  .image-10 img, .image-11 img, .image-12 img {
+    border: none;
+  }
+
+  .book-link {
+    margin-left: 0;
+  } 
+}
