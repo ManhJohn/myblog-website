@@ -1,0 +1,155 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Giải tích 3</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+      <link rel="icon" type="css/icon-x" href="images/faceicon.png">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+      <style>
+        body {
+          background: rgb(114, 204, 226);
+          font-family: sans-serif, Arial;
+          font-weight: bold;
+        }
+
+        section {
+          position: relative;
+          margin-top: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 15%;
+          vertical-align: middle;
+        }
+
+        .circle0 {
+          height: 700px;
+          width: 700px;
+          background: rgb(205, 228, 236);
+          border-radius: 50%;
+          position: absolute;
+        }
+
+         .cirlce1 {
+          height: 500px;
+          width: 500px;
+          background: lightblue;
+          border-radius: 50%;
+          position: absolute;
+        }
+
+         .cirlce2 {
+          height: 400px;
+          width: 400px;
+          background: rgb(111, 159, 172);
+          border-radius: 50%;
+          position: absolute;
+        }
+
+         .circle3  {
+          height: 300px;
+          width: 300px;
+          background: rgb(71, 127, 134);
+          border-radius: 50%;
+          position: absolute;
+        }
+        
+        .circle4 {
+          position: absolute;
+          color: white;
+          font-size: 80px;
+        }
+
+        @keyframes scale {
+          form {
+            transform: scale(0, 0);
+            transition: all 0.2s;
+          }
+
+          to {
+            transform: scale(1.5, 1.5);
+            transition: all 0.2s;
+          }
+        }
+
+        .scale {
+          animation-name: scale;
+          animation-duration: 2s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
+
+        .animation-slow {
+          animation-delay: 0.1s;
+        }
+
+        .animation-slower {
+          animation-delay: 0.2s
+        }
+        
+        @media (max-width: 800px) {
+        .circle0 {
+          width: 400px;
+          height: 400px;
+        }
+
+        .circle1 {
+          width: 350px;
+          height: 350px;
+        }
+
+        .circle2 {
+          width: 300px;
+          height: 300px;
+        }
+
+        .circle3 {
+          width: 250px;
+          height: 250px;
+        }
+       }
+
+       @media (max-width: 400px) {
+        section {
+          margin-left: 10%;
+        }
+
+        .circle0 {
+          width: 200px;
+          height: 200px;
+        }
+
+        .circle1 {
+          width: 180px;
+          height: 180px;
+        }
+
+        .circle2 {
+          width: 150px;
+          height: 150px;
+        }
+
+        .circle3 {
+          width: 140px;
+          height: 140px;
+        }
+
+        .circle4 p {
+          font-size: 50px;
+        }
+      }
+      </style>
+    </head>
+    <body>
+        <section>
+          <div class="circle0 scale"></div>
+          <div class="cirlce1 scale"></div>
+          <div class="cirlce2 scale animation-slow"></div>
+          <div class="circle3 scale animation-slower"></div>
+          <div class="circle4"><p>updating</p></div>
+        </section>
+    </body>
+  </html>
+</DOCTYPE>
