@@ -1,155 +1,206 @@
-<DOCTYPE html>
-  <html>
-    <head>
-      <title>Portfolio</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta charset="UTF-8">
-      <link rel="icon" type="css/icon-x" href="images/faceicon.png">
-      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My portfolido</title>
+    <link rel="stylesheet" href="portfolio.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-box">
+        <nav>
+          <div><a href="#home">home</a></div>
+          <div><a href="#about">about me</a></div>
+          <div><a href="#service">service</a></div>
+          <div><a href="#contact">contact</a></div>
+          <div><a href="#math">math</a></div>
+          <div><a href="#tech">tech</a></div>
+          <div><a href="#art">art</a></div>
+        </nav>
+      </div>
+    </header>
 
-      <style>
-        body {
-          background: rgb(114, 204, 226);
-          font-family: sans-serif, Arial;
-          font-weight: bold;
-        }
+    <div class="web-body">
+      <section class="home-section" id="home">
+        <div>
+          <h1>WELCOME</h1>
+          <p>Hello everyone</p>
+        </div>
 
-        section {
-          position: relative;
-          margin-top: 100px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding-top: 15%;
-          vertical-align: middle;
-        }
+        <div class="home-image">
+          <img src="images/hero-image.jpg">
+        </div>
+      </section>
 
-        .circle0 {
-          height: 700px;
-          width: 700px;
-          background: rgb(205, 228, 236);
-          border-radius: 50%;
-          position: absolute;
-        }
+      <section class="about-section" id="about">
+        <div class="about-section-child">
+          <div class="about-box">
+            <div class="about-image-left">
+              <img src="images/about-1.jpg">
+            </div>
 
-         .cirlce1 {
-          height: 500px;
-          width: 500px;
-          background: lightblue;
-          border-radius: 50%;
-          position: absolute;
-        }
+            <div class="about-image-left">
+              <img src="images/about-2.jpg">
+            </div>
+          </div>
 
-         .cirlce2 {
-          height: 400px;
-          width: 400px;
-          background: rgb(111, 159, 172);
-          border-radius: 50%;
-          position: absolute;
-        }
+          <div class="about-text">
+            <div>
+              <h1>about-me</h1>
+            </div>
 
-         .circle3  {
-          height: 300px;
-          width: 300px;
-          background: rgb(71, 127, 134);
-          border-radius: 50%;
-          position: absolute;
-        }
-        
-        .circle4 {
-          position: absolute;
-          color: white;
-          font-size: 80px;
-        }
+            <div>
+              <p>
+                my skills: my major is mathematic and i'm also proficiency at programming and graphic design
+              </p>
+            </div>
+          </div>
 
-        @keyframes scale {
-          form {
-            transform: scale(0, 0);
-            transition: all 0.2s;
-          }
+          <div class="about-box">
+            <div class="about-image-right">
+              <img src="images/about-3.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
 
-          to {
-            transform: scale(1.5, 1.5);
-            transition: all 0.2s;
-          }
-        }
+      <section class="service" id="service">
+        <div class="service-box">
+          <div>
+            <h1>service</h1>
+          </div>
 
-        .scale {
-          animation-name: scale;
-          animation-duration: 2s;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-        }
+          <div class="service-infor-box">
+            <div class="service-outer">
+              <div class="service-image">
+                <img src="images/service-1.jpg">
+              </div>
 
-        .animation-slow {
-          animation-delay: 0.1s;
-        }
+              <div class="service-text">
+                <p>math tutor</p>
+              </div>
+            </div>
 
-        .animation-slower {
-          animation-delay: 0.2s
-        }
-        
-        @media (max-width: 800px) {
-        .circle0 {
-          width: 400px;
-          height: 400px;
-        }
+            <div class="service-outer">
+              <div class="service-image">
+                <img src="images/service-2.jpg">
+              </div>
 
-        .circle1 {
-          width: 350px;
-          height: 350px;
-        }
+              <div class="service-text">
+                <p>coding</p>
+              </div>
+            </div>
 
-        .circle2 {
-          width: 300px;
-          height: 300px;
-        }
+            <div class="service-outer">
+              <div class="service-image">
+                <img src="images/service-3.jpg">
+              </div>
 
-        .circle3 {
-          width: 250px;
-          height: 250px;
-        }
-       }
+              <div class="service-text">
+                <p>design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-       @media (max-width: 400px) {
-        section {
-          margin-left: 10%;
-        }
+      <section class="contact-section" id="contact">
+        <div class="contact-box">
+          <div><h1>contact</h1></div>
+          <div><a>fanpage</a></div>
+          <div><a>instagram</a></div>
+          <div><a>youtube</a></div>
+          <div><a>tiktok</a></div>
+        </div>
+      </section>
 
-        .circle0 {
-          width: 200px;
-          height: 200px;
-        }
+      <section class="math-section" id="math">
+        <div class="math-box">
+          <div class="math-text">
+            <h1>math</h1>
+            <p>
+              Color theory is the st
+              udy of how colors work tog
+              ether and how they affect o
+              ur emotions and perceptions. It's lik
+              e a toolbox for artists, designers
+            </p>
+          </div>
 
-        .circle1 {
-          width: 180px;
-          height: 180px;
-        }
+          <div class="math-image">
+            <img src="images/math-image.jpg">
+          </div>
+        </div>
+      </section>
 
-        .circle2 {
-          width: 150px;
-          height: 150px;
-        }
+      <section class="coding-section" id="tech">
+        <div class="coding-box">
+          <div class="coding-circle">
+            <h1>coding</h1>
+            <p>
+              The Color of Paint. In 1766
+               the scientist Moses Harris c
+               reated the first color wheel 
+               to classify Red, Yellow, and B
+               lue as the primary colors
+            </p>
+          </div>
+        </div>
+      </section>
 
-        .circle3 {
-          width: 140px;
-          height: 140px;
-        }
+      <section class="art-section" id="art">
+        <div class="art-box">
+          <div class="art-images-box">
+            <div class="art-image-img">
+              <div class="art-image-box">
+                <div class="art-image">
+                  <img src="images/art-1.jpg">
+                </div>
+              </div>
+  
+              <div class="art-image-box">
+                <div class="art-image">
+                  <img src="images/art-2.jpg">
+                </div>
+              </div>
+  
+              <div class="art-image-box">
+                <div class="art-image">
+                  <img src="images/art-3.jpg">
+                </div>
+              </div>
+  
+              <div class="arrow">
+                <a onclick="plusSlide(-1)" class="pre"><</a>
+                <a onclick="plusSlide(1)" class="next">></a>
+              </div>
+            </div>
+  
+            <div class="dot-box">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
 
-        .circle4 p {
-          font-size: 50px;
-        }
-      }
-      </style>
-    </head>
-    <body>
-        <section>
-          <div class="circle0 scale"></div>
-          <div class="cirlce1 scale"></div>
-          <div class="cirlce2 scale animation-slow"></div>
-          <div class="circle3 scale animation-slower"></div>
-          <div class="circle4"><p>updating</p></div>
-        </section>
-    </body>
-  </html>
-</DOCTYPE>
+          <div class="art-text">
+            <h1>art</h1>
+            <p>
+              Color theory is both scien
+              ce and art. It explains how humans
+               perceive col
+              or, as well a
+              s the subliminal
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+
+      </footer>
+    </div>    
+
+    <script src="portfolio.js">
+    </script>
+  </body>
+</html>

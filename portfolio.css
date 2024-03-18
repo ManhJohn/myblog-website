@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  border: none;
+  margin: none;
+  outline: none;
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background: gray;
+}
+
+a:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+header {
+  height: 50px;
+  background: black;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.header-box {
+  width: 100%;
+}
+
+.header-box nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.header-box nav div {
+  padding: 2%;
+}
+
+.web-body {
+  margin-top: 50px;
+}
+
+section {
+  min-height: 550px;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(gray 50%, black 50%);
+}
+
+.home-section h1 {
+  margin-top: 20%;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+.home-image {
+  width: 70%;
+  height: 300px;
+}
+
+.home-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+}
+
+.about-section-child {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+
+.about-box {
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+}
+
+.about-image-left {
+  height: 80%;
+  width: 100%;
+}
+
+.about-image-left img {
+  width: 100%;
+  height: 80%;
+}
+
+.about-image-right {
+  width: 100%;
+  height: 100%;
+}
+
+.about-image-right img {
+  width: 100%;
+  height: 500px;
+}
+
+.about-text {
+  background: black;
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+}
+
+.about-text h1 {
+  margin: 10% 0 10% 0;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(gray 50%, black 50%);
+}
+
+.service-box h1 {
+  margin: 10% 0 10% 0;
+}
+
+.service-infor-box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 2%;
+}
+
+.service-outer {
+  height: 400px;
+  width: 20%;
+  background: white;
+  padding: 10px;
+}
+
+.service-image {
+  width: 100%;
+  height: 50%;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.service-text {
+  background: white;
+  height: calc(50% - 10px);
+}
+
+.service-text p {
+  color: black;
+}
+
+.contact-section {
+  background: rgb(75, 71, 71);
+  min-height: 350px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1cm;
+}
+
+.contact-box h1 {
+  margin-bottom: 10%;
+}
+
+.math-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+.math-text {
+  width: 40%;
+}
+
+.math-text h1 {
+  margin: 0;
+}
+
+.math-image {
+  width: 40%;
+  height: 400px;
+}
+
+.math-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.coding-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(170, 165, 165);
+}
+
+.coding-box {
+  width: 60%;
+  height: 100%;
+  background: url("images/coding-image.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.coding-box h1 {
+  margin: 10% 0 10% 0;
+}
+
+.coding-circle {
+  border-radius: 50%;
+  height: 500px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.art-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.art-images-box {
+  height: 550px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.art-image-img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.art-image-box {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  background: black;
+  display: none;
+}
+
+.art-image {
+  width: 100%;
+  height: 100%;
+}
+
+.art-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow a {
+  position: absolute;
+  font-size: 30px;
+  padding: 10px;
+  background: black;
+  z-index: 50;
+  margin-top: 18%;
+}
+
+.dot-box {
+  margin-top: -5%;
+}
+
+.dot-box span {
+  padding: 2px 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 5%;
+}
+
+.pre {
+ left: 1%;
+}
+
+.next {
+  right: 50%;
+}
+
+.active, .dot:hover {
+  background: cyan;
+}
+
+.art-text {
+  width: 40%;
+}
+
+.art-text h1 {
+  margin: 0;
+}
+
+footer {
+  background: black;
+  height: 200px;
+}
+
