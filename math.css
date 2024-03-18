@@ -58,7 +58,7 @@ body {
 }
 
 .side-bar-box .empty {
-  background: rgb(247, 215, 220);
+  background: rgb(93, 155, 93);
   pointer-events: none;
 }
 
@@ -182,7 +182,7 @@ footer {
   }
 
   .side-bar-box .empty:hover {
-    background: rgb(247, 215, 220);
+    background: rgb(93, 155, 93);
   }
 
   .show {
