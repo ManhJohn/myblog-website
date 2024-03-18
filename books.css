@@ -145,6 +145,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
+  height: 100%;
 }
 
 .image-10, .image-11, .image-12 {
@@ -156,7 +158,7 @@ section {
 .image-10 img, .image-11 img, .image-12 img {
   width: 100%;
   height: 100%;
-  padding: 10px;
+  object-fit: cover;
 }
 
 .book-link {
@@ -164,7 +166,6 @@ section {
   margin-bottom: 10px;
   padding: 2px;
   border-radius: 10px;
-  margin-left: 15px;
 }
 
 .book-link a:hover {
@@ -215,21 +216,25 @@ footer {
   }
 
   .first-box, .second-box, .third-box {
+    flex-direction: column;
+  }
+
+  .book-box {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .book-link {
+    width: 100%;
   }
 
   .image-10, .image-11, .image-12 {
     width: 200px;
     height: 300px;
     margin-top: 50px;
-  }
-
-  .image-10 img, .image-11 img, .image-12 img {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
   }
 
   .book-link {
@@ -240,6 +245,10 @@ footer {
     margin-left: 15px;
   }
 
+  .book-link p {
+    text-align: center;
+  }
+  
   footer {
     height: 200px;
     background: rgb(61, 43, 9);
@@ -259,8 +268,8 @@ footer {
   }
 
   .logo {
-  display: none;
-  }
+    display: none;
+    }
 
   header h1 {
     font-size: 40px;
@@ -284,10 +293,6 @@ footer {
   .image-10, .image-11, .image-12 {
     width: 100px;
     height: 150px;
-  }
-
-  .image-10 img, .image-11 img, .image-12 img {
-    border: none;
   }
 
   .book-link {

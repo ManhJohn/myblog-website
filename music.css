@@ -309,10 +309,14 @@ header .icon {
 }
 
 @media (max-width: 550px) {
-.search-form {
-  right: 50px;
-  top: 70px;
-}
+  .search-form {
+    right: 50px;
+    top: 70px;
+  }
+
+  .search-form i {
+    margin-left: 10%;
+  }
 }
 
 @media (max-width: 330px) {
@@ -325,7 +329,6 @@ header .icon {
 }
 
 header i {
-  font-size: 10px;
   left: 60%;
 }
 
@@ -335,7 +338,7 @@ header i {
 }
 
 .search-form i {
-  margin-left: 20%;
+  margin-left: 25%;
 }
 
 .left-side-bar {

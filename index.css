@@ -297,21 +297,30 @@ section {
 
 footer {
   background: rgb(25, 54, 25);
-  height: 300px;
+  min-height: 300px;
+}
+
+.footer-box {
+  width: 100%;
+  height: 100%;
 }
 
 .footer-para {
   margin-top: 50px;
   color: white;
+  width: 100%;
+  height: 100%;
 }
 
 .back-to-top {
   border: 1px solid white;
   padding: 10px;
   border-radius: 20px;
+  width: 100%;
 }
 
 .back-to-top a {
+  text-align: center;
   margin-left: 8px;
 }
 
@@ -321,7 +330,6 @@ footer {
 
 .footer-para a {
   margin-right: 10px;
-  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -411,20 +419,24 @@ footer {
     font-size: 13px;
   }
 
-  .show {
-    transform: translateX(-0.1px);
-  }
-
   .menu-icon-box div i {
     font-size: 20px;
   }
 
   .home-section {
-    background-position: left;
+    background-position: 95%;
   }
 
   .about-section {
-    background: linear-gradient(to left, rgb(128, 226, 71) 20%, var(--bg) 20%, var(--bg) 60%);
+    background: linear-gradient(to left, rgb(163, 230, 124) 20%, var(--bg) 20%, var(--bg) 60%);
+  }
+
+  .about-image-box {
+    width: 95%;
+  }
+
+  .about-para {
+    width: 95%;
   }
 
   .about-image, .about-empty {
@@ -436,7 +448,7 @@ footer {
   }
 
   .service-image-box {
-    width: 70%;
+    width: 95%;
   }
 
   .service-image, .service-image-top {
@@ -445,10 +457,15 @@ footer {
 
   .service-para {
     padding: 0 10px;
+    width: 90%;
   }
 
   .service-section p {
     margin-left: 0%;
+  }
+
+  .contact-image {
+    width: 95%;
   }
 }
 
