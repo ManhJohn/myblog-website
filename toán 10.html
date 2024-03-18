@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toán 10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="icon" type="css/icon-x" href="images/faceicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+  <style>
+    * {
+      padding: 0;
+      border: none;
+      margin: none;
+      outline: none;
+      color: white;
+      text-decoration: none;
+      font-family: sans-serif, Arial;
+    }
+
+    header {
+      height: 100px;
+      background: rgb(22, 78, 22);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      border-bottom: 10px solid black;
+    }
+
+    header div {
+      text-align: center;
+    }
+
+    header h2 {
+      position: relative;
+      margin-top: 40px;
+    }
+
+    .web-body {
+      background: url(toan12/background.jpg) no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-top: 100px;
+    }
+
+    section {
+      min-height: 500px;
+    }
+
+    .cal, .geo {
+      background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2) 30%, rgba(255, 255, 255, 0.2));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid white;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+    }
+
+    .cal-links {
+      border: 1px solid white;
+      padding: 10px 10px 20px 10px;
+      border-radius: 10%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .cal-links div, .geo-links div {
+      padding: 10px;
+      background: rgba(86, 138, 86, 0.8);
+      margin-top: 20px;
+      border-radius: 20px;
+    }
+
+    .cal-links div a:hover, .geo-links div a:hover {
+      color: cyan;
+    }
+
+    .geo-image {
+      width: 300px;
+      height: 300px;
+      padding: 10px;
+      background: white;
+      border-radius: 50%;
+    }
+
+    .geo-image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    footer {
+      height: 200px;
+      background: black;
+      margin-top: -15px;
+      border-top: 1px solid white;
+    }
+
+    .source {
+      margin-top: 50px;
+    }
+
+    @media (max-width: 990px) {
+      .geo-image {
+        display: none;
+      }
+
+      .geo-links {
+        border: 1px solid white;
+        padding: 10px 10px 20px 10px;
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+  </style>
+  <body>
+    <header>
+      <div>
+        <p>
+          <h2>Các dạng bài tập toán 10</h2>
+        </p>
+      </div>
+    </header>
+
+    <div class="web-body">
+      <section class="cal">
+        <div>
+          <p><h1>Đại Số 10</h1></p>
+        </div>
+
+        <div class="cal-links">
+          <div>
+            <a target="_blank" href="toan10/cac-dang-toan-menh-de-va-tap-hop-thuong-gap-nguyen-bao-vuong.pdf">
+              Chuyên đề mệnh đề và tập hợp
+            </a>
+          </div>
+
+          <div>
+            <a target="_blank" href="toan10/ham-so-bac-nhat-ham-so-bac-hai-va-cac-bai-toan-lien-quan.pdf">
+              chuyên đề hàm bặc nhất và hàm bậc hai
+            </a>
+          </div>
+
+          <div>
+            <a target="_blank" href="toan10/chuyen-de-phuong-trinh-va-he-phuong-trinh-nguyen-bao-vuong.pdf">
+              chuyên đề phương trình và hệ phương trình
+            </a>
+          </div>
+
+          <div>
+            <a target="_blank" href="toan10/phan-dang-va-bai-tap-chuyen-de-bat-dang-thuc-bat-phuong-trinh-nguyen-bao-vuong.pdf">
+              chuyên đề bất đẳng thức và bất phương trình
+            </a>
+          </div>
+
+          <div>
+            <a target="_blank" href="toan10/bai-tap-mot-so-yeu-to-thong-ke-va-xac-suat-toan-10-canh-dieu.pdf">
+              chuyên đề thống kê, xác suất
+            </a>
+          </div>
+
+          <div>
+            <a target="_blank" href="toan10/cac-dang-toan-trac-nghiem-goc-luong-giac-va-cong-thuc-luong-giac.pdf">
+              chuyên đề cung và góc lượng giác, công thức lượng giác
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="geo">
+        <div>
+          <p><h1>Hình Học 10</h1></p>
+        </div>
+
+        <div class="content">
+          <div class="geo-links">
+            <div>
+              <a target="_blank" href="toan10/cac-dang-toan-vecto-thuong-gap-nguyen-bao-vuong.pdf">
+                chuyên đề véctơ
+              </a>
+            </div>
+
+            <div>
+              <a target="_blank" href="toan10/chuyen-de-phuong-phap-toa-do-trong-mat-phang-nguyen-bao-vuong.pdf">
+                chuyên đề phương pháp toạ độ trong mặt phẳng
+              </a>
+            </div>
+          </div>
+
+          <div class="geo-image">
+            <img src="toan12/geo-image.jpg">
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <center>
+          <div class="source">
+            <p>Nguồn: https://toanmath.com/</p>
+            <p>tác giả: Nguyễn Bảo Vương</p>
+          </div>
+        </center>
+      </footer>
+    </div>
+  </body>
+</html>
