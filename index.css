@@ -440,7 +440,7 @@ footer {
   }
 
   .about-image, .about-empty {
-    height: 150px;
+    height: 250px;
   }
 
   .service-inside {
@@ -452,7 +452,7 @@ footer {
   }
 
   .service-image, .service-image-top {
-    height: 100px;
+    height: 150px;
   }
 
   .service-para {
@@ -466,6 +466,7 @@ footer {
 
   .contact-image {
     width: 95%;
+    height: 250px;
   }
 }
 
