@@ -8,10 +8,20 @@
   text-align: center;
 }
 
+:root {
+  --head: rgb(51, 83, 51);
+  --bg1: rgb(155, 231, 136);
+  --border: black;
+}
+
+img {
+  object-fit: cover;
+}
+
 .web-body {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  min-width: 100%;
   min-height: 100%;
 }
 
@@ -20,7 +30,7 @@ section {
 }
 
 .home-section {
-  background: #996515;
+  background: rgb(113, 197, 113);
   margin-top: 0px;
   display: flex;
   flex-direction: column;
@@ -28,8 +38,8 @@ section {
 
 .header {
   height: 100px;
-  background: black;
-  border-bottom: 10px solid #e69d2a;
+  background: var(--head);
+  border-bottom: 10px solid var(--border);
 }
 
 .header h1 {
@@ -81,9 +91,9 @@ section {
 }
 
 .poster-heading {
-  background: rgb(73, 68, 68);
+  background: var(--head);
   height: 100px;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid var(--border);
 }
 
 .poster-heading h1 {
@@ -97,7 +107,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(#E1C16E 50%, #996515 50%);
+  background: linear-gradient(var(--bg1) 50%, rgb(66, 151, 66) 50%);
   min-height: 500px;
 }
 
@@ -123,8 +133,8 @@ section {
 
 .banner-heading {
   height: 100px;
-  background: rgb(73, 68, 68);
-  border-bottom: 10px solid black;
+  background: var(--head);
+  border-bottom: 10px solid var(--border);
 }
 
 .banner-heading h1 {
@@ -138,7 +148,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(to right, rgb(230, 154, 14) 50%, #996515 50%);
+  background: linear-gradient(to right, var(--bg1) 50%, rgb(104, 238, 138) 50%);
   min-height: 500px;
 }
 
@@ -165,8 +175,8 @@ section {
 
 .drawing-heading {
   height: 100px;
-  background: rgb(73, 68, 68);
-  border-bottom: 10px solid black;
+  background: var(--head);
+  border-bottom: 10px solid var(--border);
 }
 
 .drawing-section h1 {
@@ -249,7 +259,7 @@ section {
 
 footer {
   height: 200px;
-  background: lightgray;
+  background: black;
   border-top: 10px solid white;
 }
 
