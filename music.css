@@ -7,13 +7,18 @@
   transition: all 0.5s;
 }
 
+:root {
+  --bg: rgb(68, 112, 68);
+  --border: rgb(34, 70, 34);
+}
+
 body {
-  background: rgb(82, 78, 78);
+  background: var(--bg);
 }
 
 header {
   height: 100px;
-  background: black;
+  background: rgb(35, 75, 35);
   position: fixed;
   top: 0;
   left: 10%;
@@ -32,7 +37,7 @@ header .icon {
 }
 
 header .icon:hover {
-  color: cyan;
+  color: green;
 }
 
 .header-box {
@@ -70,7 +75,7 @@ header .icon:hover {
 
 .left-side-bar {
   width: 10%;
-  background: rgb(192, 53, 76);
+  background: rgb(107, 206, 107);
   height: 100%;
   position: fixed;
   top: 0;
@@ -113,7 +118,7 @@ header .icon:hover {
 }
 
 .left-side-bar .links-box i:hover {
-  color: cyan;
+  color: green;
 }
 
 .web-body {
@@ -124,7 +129,7 @@ header .icon:hover {
   position: fixed;
   left: 10%;
   margin-top: 0;
-  background: pink;
+  background: rgb(147, 204, 135);
   z-index: 50;
 }
 
@@ -141,7 +146,7 @@ header .icon:hover {
 .music-background {
   height: 70%;
   width: 70%;
-  border: 5px solid rgb(201, 80, 101);
+  border: 5px solid var(--border);
   width: 70%;
   border-radius: 25px 25px 0 0;
 }
@@ -155,7 +160,7 @@ header .icon:hover {
 .music-icon {
   height: 50px;
   margin-top: 10px;
-  border: 5px solid rgb(201, 80, 101);
+  border: 5px solid var(--border);
   border-radius: 0 0 25px 25px;
   width: 70%;
 }
@@ -174,7 +179,7 @@ header .icon:hover {
   height: 100vh;
   float: right;
   margin-top: 92px;
-  background: rgb(82, 78, 78);     
+  background: var(--bg);     
 }
 
 .playlist-header {
@@ -216,7 +221,7 @@ header .icon:hover {
 }
 
 .music-playlist div:hover {
-  background: cyan;
+  background: lightgreen;
 }
 
 @media (max-width: 1300px) {
