@@ -277,7 +277,8 @@ footer {
   }
 
   .search-form {
-    left: 10%;
+    position: relative;
+    left: 25%;
     top: 0;
     width: 200px;
   }
