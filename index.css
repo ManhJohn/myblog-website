@@ -418,6 +418,7 @@ footer {
   * {
     text-align: center;
     font-size: 13px;
+    color: black;
   }
 
   .menu-icon-box div i {
@@ -429,11 +430,18 @@ footer {
   }
 
   .about-section {
-    background: linear-gradient(to left, rgb(163, 230, 124) 20%, var(--bg) 20%, var(--bg) 60%);
+    background: white;
   }
 
+  .about-empty {
+    display: none;
+  }
   .about-image-box {
     width: 95%;
+  }
+
+  .about-image {
+    width: 100%;
   }
 
   .about-para {
@@ -445,7 +453,7 @@ footer {
   }
 
   .service-inside {
-    background: linear-gradient(to right, white 30%, var(--bg--2) 10%, var(--bg--2) 60%);  
+    background: white;  
   }
 
   .service-image-box {
@@ -465,9 +473,25 @@ footer {
     margin-left: 0%;
   }
 
+  .service-empty {
+    display: none;
+  }
+
+  .contact-section {
+    background: white;
+  }
+
+  .contact-section a {
+    color: black;
+  }
+
   .contact-image {
     width: 95%;
     height: 250px;
+  }
+
+  footer p, footer svg path {
+    color: white;
   }
 }
 
