@@ -466,6 +466,15 @@ footer {
     height: 150px;
   }
 
+  .service-image-top {
+    width: 100%;
+  }
+
+  .service-image-top, .service-image-child {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .service-para {
     padding: 0 10px;
     width: 90%;
