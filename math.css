@@ -10,6 +10,7 @@
 
 :root {
   --top: rgb(48, 80, 48);
+  --right: rgb(93, 155, 93);
 }
 
 ::-webkit-scrollbar {
@@ -17,7 +18,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: green;
+  background: lightgray;
 }
 
 body {
@@ -58,7 +59,7 @@ body {
 }
 
 .side-bar-box .empty {
-  background: rgb(93, 155, 93);
+  background: var(--right);
   pointer-events: none;
 }
 
@@ -122,7 +123,8 @@ img {
 .left-content {
   width: 70%;
   min-height: 550px;
-  background: rgb(62, 122, 62);
+  background: white;
+  color: black;
   padding: 5%;
   display: flex;
   flex-direction: column;
@@ -147,7 +149,7 @@ img {
 
 .right-content {
   position: sticky;
-  background: rgb(93, 155, 93);
+  background: var(--right);
   width: 30%;
   height: 600px;
   top: 0;
@@ -182,7 +184,7 @@ footer {
   }
 
   .side-bar-box .empty:hover {
-    background: rgb(93, 155, 93);
+    background: rgb(247, 215, 220);
   }
 
   .show {
