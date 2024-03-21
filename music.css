@@ -129,7 +129,7 @@ header .icon:hover {
   position: fixed;
   left: 10%;
   margin-top: 0;
-  background: rgb(147, 204, 135);
+  background: white;
   z-index: 50;
 }
 
