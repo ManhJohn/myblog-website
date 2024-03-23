@@ -337,6 +337,53 @@ footer {
   margin-right: 10px;
 }
 
+.message {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  background: pink;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 5px;
+  align-items: self-start;
+}
+
+.appear-message {
+  cursor: pointer;
+}
+
+.message i {
+  font-size: 45px;
+  margin-top: 4px;
+}
+
+.message-form {
+  min-width: 350px;
+  min-height: 150px;
+  position: absolute;
+  right: 105%;
+  background: green;
+  padding: 10px;
+  bottom: 50px;
+  border-radius: 10px;
+  display: none;
+}
+
+.message .appear { display: block;}
+
+.message-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.message-form form input, form textarea {
+  padding: 5px 10px;
+}
+
 @media (max-width: 1024px) {
   .about-section span h1 {
     font-size: 50px;
@@ -506,10 +553,28 @@ footer {
   footer p, footer svg path {
     color: white;
   }
+
+  .message {
+    right: 5%;
+    bottom: 5%;
+  }
+  
+  .message-form {
+    min-width: 300px;
+    min-height: 150px;
+    right: 0;
+    bottom: 105%;
+  }
+
+  .message-form input, .message-form textarea {
+    text-align: left;
+  }
 }
 
 @media (max-width: 345px) {
-
+  .message-form {
+    min-width: 100px;
+  }
 }
 
 /*.reveal {
