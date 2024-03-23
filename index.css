@@ -196,6 +196,7 @@ section {
   display: flex;
   flex-direction: column;
   margin-left: 20%;
+  border-bottom: 2px solid black;
 }
 
 .service-section {
@@ -262,7 +263,7 @@ section {
 
 .service-section p {
   color: black;
-  margin-left: 30%;
+  margin-left: 10%;
 }
 
 .contact-section {
@@ -365,6 +366,7 @@ footer {
 
   .about-para {
     margin-left: 0%;
+    border-bottom: none;
   }
 
   .service-section h1 {
