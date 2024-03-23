@@ -18,6 +18,7 @@ let menuShow = document.querySelector('.menu-section');
             reveals[i].classList.remove('active');
           }
         }
+      }
 
         /*
         let lastScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -32,4 +33,11 @@ let menuShow = document.querySelector('.menu-section');
           }
           lastScroll = currentScroll;
         })*/
-      }
+
+let message = document.querySelector('.appear-message');
+
+message.onclick = function() {
+  document.querySelector('.message-form').classList.toggle('appear');
+}
+
+      
