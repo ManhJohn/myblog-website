@@ -374,6 +374,9 @@ footer {
 
 .message .appear { display: block;}
 
+.message .appear-out { display: block;}
+
+
 .message-form form {
   display: flex;
   flex-direction: column;
