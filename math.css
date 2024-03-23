@@ -155,16 +155,6 @@ img {
   top: 0;
 }
 
-.fanpage {
-  width: 100%;
-  height: 100%;
-}
-
-.fanpage iframe {
-  width: 100%;
-  height: 100%;
-}
-
 footer {
   min-height: 500px;
   background: var(--top);
