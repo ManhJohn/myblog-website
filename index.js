@@ -40,4 +40,11 @@ message.onclick = function() {
   document.querySelector('.message-form').classList.toggle('appear');
 }
 
+/* meassage show out */
+document.querySelector('.message-form').classList.add('appear-out');
+setTimeout(() => {
+  document.querySelector('.message-form').classList.remove('appear-out');
+}, 3000);
+
+
       
