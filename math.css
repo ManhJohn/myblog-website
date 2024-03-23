@@ -155,6 +155,17 @@ img {
   top: 0;
 }
 
+.fanpage {
+  width: 100%;
+  height: 100%;
+}
+
+.fanpage div {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 footer {
   min-height: 500px;
   background: var(--top);
