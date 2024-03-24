@@ -65,12 +65,13 @@ header .icon:hover {
 .search-form i {
   color: black;
   margin-top: 5px;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 .search-form input {
   padding: 5px;
   border-radius: 10px;
+  width: 80%;
 }
 
 .left-side-bar {
@@ -231,10 +232,6 @@ header .icon:hover {
 
   .search-form {
     width: 200px;
-  }
-
-  .search-form input {
-    width: 80%;
   }
 
   .music-playlist div {
