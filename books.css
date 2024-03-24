@@ -66,6 +66,7 @@ header h1 {
   z-index: 50;
   color: black;
   top: 5px;
+  padding-right: 5px;
 }
 
 .search-icon {
