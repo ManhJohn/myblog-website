@@ -44,7 +44,7 @@ message.onclick = function() {
 document.querySelector('.message-form').classList.add('appear-out');
 setTimeout(() => {
   document.querySelector('.message-form').classList.remove('appear-out');
-}, 3000);
+}, 2000);
 
 
       
