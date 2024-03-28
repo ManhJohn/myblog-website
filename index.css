@@ -54,10 +54,6 @@ header .header-box {
   color: cyan;
 }
 
-section {
-  min-height: 550px;
-}
-
 .menu-section {
   background: rgb(72, 107, 72);
   width: 50%; 
@@ -137,15 +133,15 @@ section {
   flex-direction: column;
 }
 
+section {
+  min-height: 550px;
+}
+
 .home-section {
   background: url("images/hero-image.jpg") no-repeat;
   margin-top: 0;
   background-position: center;
   background-size: cover;
-}
-
-.reveal h1 {
-  text-align: center;
 }
 
 .about-section .reveal {
@@ -154,36 +150,39 @@ section {
 }
 
 .about-section {
-  flex-direction: column;
-  align-items: center;
-  background: white;
+  background: linear-gradient(to left, var(--bg--1) 20%,  white 20%, white 60%);
 }
 
 .about-section span h1 {
   font-size: 80px;
+  margin: 0;
+  margin-bottom: 10%;
+  text-wrap: nowrap;
 }
 
 .about-box {
+  height: 550px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10%;
 }
 
 .about-image-box {
   display: flex;
+  width: 50%;
 }  
 
 .about-image {
   width: 60%;
-  height: 400px;
+  height: 300px;
   margin-left: 20%;
 }
 
 .about-empty {
   background: var(--bg);
-  width: 20%;
-  height: 400px;
+  width: 25%;
+  height: 300px;
   margin-left: 2%;
 }
 
@@ -200,29 +199,34 @@ section {
 }
 
 .service-section {
-  display: flex;
-  flex-direction: column;
+  min-height: 100%;
 }
 
 .service-section h1 {
   font-size: 80px;
-  text-align: center;
-  color: black;
+  margin: 10% 0 10% 10%;
 }
 
 .service-inside {
-  background: var(--bg--1);  
+  background: linear-gradient(to right, var(--bg) 30%, var(--bg--2) 10%, var(--bg--2) 60%);  
+  height: 100%;
+  width: 100%;
 }
 
 .service-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 500px;
+  margin-bottom: -5%;
+  width: 100%;
 }
 
 .service-image-box {
   margin-left: 20%;
-  width: 30%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-image-child {
@@ -233,16 +237,15 @@ section {
 }
 
 .service-image-top {
-  width: 96%;
-  height: 200px;
+  height: 180px;
   background: white;
   padding: 2%;
   padding-bottom: 0;
 }
 
 .service-image {
-  width: 100%;
-  height: 200px;
+  width: 49%;
+  height: 180px;
 }
 
 .service-box img {
@@ -251,18 +254,18 @@ section {
 }
 
 .service-empty {
-  background: var(--bg--1);
+  background: var(--bg--2);
   height: 100px;
 }
 
 .service-para {
-  padding: 20px 5px;
-  background: var(--bg--2);
+  padding: 30px 5px;
+  background: var(--bg--1);
   width: 40%;
+  height: 50%;
 }
 
 .service-section p {
-  color: black;
   margin-left: 10%;
 }
 
@@ -271,7 +274,7 @@ section {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: white;
+  background: linear-gradient(to right, var(--bg--1) 10%, white 10%, white 80%);
 }
 
 .contact-image {
@@ -376,7 +379,6 @@ footer {
 
 .message .appear-out { display: block;}
 
-
 .message-form form {
   display: flex;
   flex-direction: column;
@@ -390,6 +392,7 @@ footer {
 @media (max-width: 1024px) {
   .about-section span h1 {
     font-size: 50px;
+    margin-top: 20%;
   } 
 
   .about-box {
@@ -401,6 +404,7 @@ footer {
     flex-direction: row;
     width: 50%;
     height: 100%;
+    margin-top: 5%;
   }
 
   .about-image {
@@ -426,11 +430,15 @@ footer {
   .service-box {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
   }
 
   .service-image-box {
     margin-left: 0%;
     width: 50%;
+    margin-top: 5%;
+    order: 2;
   }
 
   .service-image-top {
@@ -441,18 +449,10 @@ footer {
     height: 150px;
   }
 
-  .service-empty {
-    height: 100px;
-  }
-
   .service-para {
     width: 50%;
-    margin-top: 5%;
-  }
-
-  .service-section p {
-    color: black;
-    margin-left: 20%;
+    margin-top: 10%;
+    order: 1;
   }
 
   .contact-section {
@@ -475,6 +475,10 @@ footer {
     font-size: 13px;
   }
 
+  .menu-section {
+    width: 100%;
+  }
+
   .menu-icon-box div i {
     font-size: 20px;
   }
@@ -487,9 +491,15 @@ footer {
     background: white;
   }
 
+  .about-section span h1 {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
   .about-empty {
     display: none;
   }
+
   .about-image-box {
     width: 95%;
   }
@@ -508,6 +518,11 @@ footer {
 
   .service-inside {
     background: white;  
+  }
+
+  .service-section h1 {
+    margin-left: 0;
+    margin-bottom: 5%;
   }
 
   .service-image-box {
