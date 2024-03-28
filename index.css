@@ -3,7 +3,8 @@
   border: none;
   margin: none;
   outline: none;
-  padding: none;
+  padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif, Arial;
   line-height: 1cm;
   text-decoration: none;
