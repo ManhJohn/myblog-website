@@ -3,6 +3,7 @@
   border: none;
   margin: none;
   outline: none;
+  box-sizing: border-box;
   color: white;
   text-decoration: none;
 }
@@ -80,6 +81,8 @@ h1 {
 .about-section {
   display: flex;
   align-items: center;
+  margin-top: 5%;
+  background: rgb(170, 165, 165);
 }
 
 .about-section-child {
@@ -89,35 +92,41 @@ h1 {
 }
 
 .about-box {
-  width: 100%;
+  width: calc(96% / 3);
   height: 100%;
-  margin-top: 10%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-image-left {
-  height: 80%;
+  height: 250px;
   width: 100%;
 }
 
 .about-image-left img {
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 
 .about-image-right {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .about-image-right img {
   width: 100%;
-  height: 500px;
+  min-height: 500px;
 }
 
 .about-text {
   background: black;
-  width: 100%;
-  height: 500px;
+  width: (96% / 3);
+  min-height: 550px;
   padding: 10px;
 }
 
